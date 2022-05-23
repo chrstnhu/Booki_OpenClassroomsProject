@@ -1,12 +1,14 @@
-/*Ecran ordinateur*/
+/*#Ecran ordinateur*/
 
-body {  /*Changer sur mobile ?*/
+body {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
-    margin: auto;
-    padding: 2%;
     line-height: 15px;
     box-sizing: border-box;
+}
+
+header, main {
+    margin: 2%;
 }
 
 ul{
@@ -31,7 +33,8 @@ button {
     cursor: pointer;
 }
 
-    /* Header */
+/*#header*/
+
 header {
     display: flex;
     justify-content: space-between;
@@ -61,6 +64,8 @@ header {
     padding-top: 38px;
 }
 
+/*#endheader*/
+    
     /* Section 1*/
 
 .section-1 {
@@ -69,6 +74,7 @@ header {
 
 .main-form {
     margin: 20px 0 20px 0;
+
 }
 
 .main-form, .button-rechercher, .filtres, #search {
@@ -85,7 +91,6 @@ header {
 #search {
     border: 1px solid #F2F2F2;
     padding: 9.5px 5px 9.5px 11px;
-    font-size: large;
 }
 
 #location-icone {
@@ -104,7 +109,6 @@ header {
     border-radius: 0 15px 15px 0;
     background-color: #0065FC;
     color:#FFFFFF;
-    font-size: large;
 }
 
 .fa-magnifying-glass {
@@ -337,7 +341,6 @@ header {
     /*Activités à Marseille*/
 
 .section-3 {
-    margin-right: 2px;
     margin-top: 50px;
 }
 
@@ -347,6 +350,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: stretch;
+    gap: 20px;
 }
 
 .activites-card{
@@ -355,7 +359,6 @@ header {
     border: 1px solid #F2F2F2;
     border-radius: 20px;
     box-shadow: 3px 3px 10px 3px rgba(0,0,0,0.2);
-    margin: 20px 0 20px 0;
     width: 280px;
 }
 
@@ -372,7 +375,8 @@ header {
 .activites-double {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .activites-card-grande-image, .activites-card-moyenne-image, .activites-card-petite-image {
@@ -392,8 +396,72 @@ header {
     height: 100px;
 }
 
+    /*Footer*/
+
+.footer {
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+    line-height: 30px;
+    margin-top: 50px;
+    width: auto;
+    height: auto;
+}
+
+.footer-ul {
+    flex-grow: 1;
+}
 
 
+/*#endEcran*/
+
+
+ /* -- Ecran tablette -- */
+
+@media screen and (max-width:992px) and (min-width:768px) {
+
+        /*Section 2*/
+
+.section-2 {
+    flex-direction: column;
+}  
+
+.hebergements-fond {
+    margin-right: 0;
+    margin-bottom: 3%;
+}
+
+.hebergements, .populaires, {
+    justify-content: space-evenly;
+}
+
+            /* Hébergements */
+#nav-hebergements, #activites {
+    text-align: center;
+}
+
+.hebergements-afficher {
+    margin-left: 45%;
+    margin-top: 10%;
+}
+
+            /* Populaires */
+.populaires{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.populaires-titre{
+    justify-content: center;
+}
+
+        /* Sections 3 - Activités*/
+.activites{
+    justify-content: space-evenly;
+}
+
+
+}
 
 
 
@@ -403,7 +471,7 @@ header {
 
 body {
     line-height: 200%;
-    font-size: 80%;
+    font-size: 100%;
 }
 
     /* Header */
@@ -413,20 +481,24 @@ header {
 }
 
 .header img {
-    width:100%;
-}
-
-.header-nav {  /* Sur tous l'écran*/
-    align-items: stretch;
+    width:150px;
+    padding-left: 50px;
 }
 
 .header-nav a{  
     border-top: none;
+    width: 100%;
+}
+
+.header-nav ul{
+    margin: 0;
+    padding-left: 0;
 }
 
 .header-nav li{
     border-bottom: 3px solid #F2F2F2;
     padding-bottom: 30px;
+    width: 50%;
 }
 
 .header-nav li a:hover{
@@ -439,18 +511,15 @@ header {
 
 .main-form {
     margin: 55px 0 20px 0;
+    width: 100%;
 }
-  
+
         /*Recherche*/
 
 #location-icone {
     padding-right: 5%;
     padding-left: 5%;
     border-radius: 25px 0 0 25px;
-}
-
-#search {
-    font-size: 90%;
 }
 
         /*Filtres*/
@@ -474,17 +543,6 @@ header {
 .filtres-icones {
     height: 50px;
     width: 50px;
-}
-
-.filtres-info-icone {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 50px;
-    border: 1px solid #F2F2F2;
-    border-radius: 50%;
-    color: #0065FC;
 }
 
 .filtres-info p {
@@ -569,6 +627,11 @@ header {
 
 .activites {
     flex-direction: column;
+    padding: 3%;
+}
+
+#activites {
+    padding-left: 20px;
 }
 
 .activites-card {
@@ -590,6 +653,16 @@ header {
 
 .activites-double{
     justify-content: inherit;
+}
+
+/*Footer*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+.footer-ul {
+    flex-grow: 1;
 }
 
 }
