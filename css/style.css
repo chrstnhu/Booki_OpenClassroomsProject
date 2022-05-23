@@ -431,12 +431,12 @@ header {
     margin-bottom: 3%;
 }
 
-.hebergements, .populaires, {
+.hebergements, .populaires{
     justify-content: space-evenly;
 }
 
             /* Hébergements */
-#nav-hebergements, #activites {
+#nav-hebergements, #activites{
     text-align: center;
 }
 
@@ -462,7 +462,6 @@ header {
 
 
 }
-
 
 
 /* -- Ecran portable -- */
