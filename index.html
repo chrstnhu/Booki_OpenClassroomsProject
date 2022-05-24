@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 	<head>
 		<meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/03d22adc67.js" crossorigin="anonymous"></script>
+
         <link rel="stylesheet" href="/css/normalize.css" />
         <link rel="stylesheet" href="/css/style.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
 		
-        <script src="https://kit.fontawesome.com/03d22adc67.js" crossorigin="anonymous"></script>
-	    
         <title>Booki</title>
 	</head>
 
@@ -48,7 +49,7 @@
                         
                     <button class="button-rechercher">   
                         <i class="fa-solid fa-magnifying-glass fa-xs"></i>
-                        <p class="button-rechercher-lettre"> Rechercher</p>
+                        <span class="button-rechercher-lettre"> Rechercher</span>
                     </button>
                 
                 </form>
@@ -58,30 +59,30 @@
                     
                     <div class="filtres-listes">
                         <button class="filtres-boites">
-                            <div class="filtres-icones">
+                            <span class="filtres-icones">
                                 <i class="fa-solid fa-money-bill-wave fa-xs"></i>
-                            </div>
+                            </span>
                             <span class="filtres-textes">Économiques</span>
                         </button>
 
                         <button class="filtres-boites">
-                            <div class="filtres-icones">
+                            <span class="filtres-icones">
                                 <i class="fa-solid fa-child-reaching fa-xs"></i>
-                            </div>
+                            </span>
                             <span class="filtres-textes">Familial</span>
                         </button>
 
                         <button class="filtres-boites">
-                            <div class="filtres-icones">
+                            <span class="filtres-icones">
                                 <i class="fa-solid fa-heart fa-xs"></i>
-                            </div>
+                            </span>
                             <span class="filtres-textes ">Romantique</span>
                         </button>
                         
                         <button class="filtres-boites">
-                            <div class="filtres-icones">
+                            <span class="filtres-icones">
                                 <i class="fa-solid fa-dog fa-xs"></i>
-                            </div>
+                            </span>
                             <span class="filtres-textes">Animaux autorisés</span>
                         </button>
                     </div>
@@ -204,7 +205,9 @@
                         </a>
                     </div>
 
-                <span><a href="" class="hebergements-afficher"><strong>Afficher plus</strong></a></span>
+                <span class="hebergements-afficher">
+                    <a href=""><strong>Afficher plus</strong></a>
+                </span>
                 </div>
                 
                 <!-- Section 2 - Les plus populaires -->
